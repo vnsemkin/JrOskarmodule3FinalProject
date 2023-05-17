@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Level 1</title>
+</head>
+<body>
+<h1>Level 2</h1>
+<h1>Welcome, <span th:text="${username}"></span>!</h1>
+<form method="POST" action="/level2">
+  <p>Select an option:</p>
+  <label>
+    <input type="radio" name="answer" value="1">
+    True
+  </label>
+  <br>
+  <label>
+    <input type="radio" name="answer" value="2">
+    False
+  </label>
+  <br>
+  <input type="submit" value="Submit">
+</form>
+</body>
+</html>
