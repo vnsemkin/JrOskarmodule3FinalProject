@@ -4,8 +4,8 @@ import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.web.servlet.ModelAndView;
 
 
-public interface MyHandler {
-    void setNextHandler(MyHandler handler);
+public interface QuestInterface {
+    void setNextHandler(QuestInterface handler);
 
     boolean canHandle(HttpServletRequest request);
 
